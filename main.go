@@ -80,6 +80,9 @@ func printScreen() {
 
 	simpleansi.MoveCursor(player.row, player.col)
 	fmt.Print("P")
+
+	// move cursor away from game
+	simpleansi.MoveCursor(len(maze)+1, 0)
 }
 
 
